@@ -146,7 +146,6 @@ world_data <- world_map %>%
 
 # world map of grain yield in 2019
 
-png("yieldmap2019bold.png", units="in", width=9, height=5, res=300)
 ggplot(data = world_data) +
   geom_sf(aes(fill = cereal_yield), color = "white") +
   scale_fill_viridis_c(option = "C", na.value = "gray90") +
@@ -155,7 +154,6 @@ ggplot(data = world_data) +
   theme(legend.position = "right") +
   labs(title = "                                        Grain Yield in Tonnes per Hectare for 2019")+
   theme(plot.title = element_text(size = 13, face = "bold"))
-dev.off()
 
 
 
