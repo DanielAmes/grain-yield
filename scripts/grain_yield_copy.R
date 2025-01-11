@@ -239,10 +239,10 @@ world_data$class <- as.factor(world_data$class)
 
 # colorblind-friendly palette for GMM group plots
 
-cbPalette <- c("#E69F00", "#56B4E9", "#009E73","#CC79A7", "#F0E442", "#0072B2", 
+cb_friendly <- c("#E69F00", "#56B4E9", "#009E73","#CC79A7", "#F0E442", "#0072B2", 
                "#D55E00", "#CC79A7", "#999999")
 
-mclust.options("classPlotColors" = cbPalette)
+mclust.options("classPlotColors" = cb_friendly)
 
 
 
