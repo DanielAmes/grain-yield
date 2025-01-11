@@ -211,7 +211,7 @@ plot(logit_transform_fertilizer,world_data$cereal_yield,
      main = "Fertilizer vs. Cereal Yield (with transformation)")
 
 abline(a = lm_logistic_transform$coefficients[1],
-       b = lm_logistic_transform$coefficients[2]   )
+       b = lm_logistic_transform$coefficients[2])
 
 
 
@@ -241,6 +241,7 @@ world_data$class <- as.factor(world_data$class)
 
 cbPalette <- c("#E69F00", "#56B4E9", "#009E73","#CC79A7", "#F0E442", "#0072B2", 
                "#D55E00", "#CC79A7", "#999999")
+
 mclust.options("classPlotColors" = cbPalette)
 
 
